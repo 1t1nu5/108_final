@@ -1,24 +1,42 @@
 #include <stdio.h>
 int main()
 {
-	int n0;
-	scanf("%d", &n0);
-	int m[n0][n0];
+	int n0, n1, n2;
+	scanf("%d %d %d", &n0, &n1, &n2);
+	int m0[n0][n0];
+	int m1[n1][n1];
+	int m2[n2][n2];
 	for (int i = 0; i < n0; i++)
 	{
 		for (int j = 0; j < n0; j++)
 		{
-			scanf("%d", &m[i][j]);
+			scanf("%d", &m0[i][j]);
 		}
 	}
+	for (int i = 0; i < n0; i++)
+	{
+		for (int j = 0; j < n0; j++)
+		{
+			scanf("%d", &m1[i][j]);
+		}
+	}
+	for (int i = 0; i < n0; i++)
+	{
+		for (int j = 0; j < n0; j++)
+		{
+			scanf("%d", &m2[i][j]);
+		}
+	}
+	
+	
 	int sum = 0, check = 0;
 	for (int i = 0; i < n0; i++)
 	{
-		sum += m[i][i];
+		sum += m0[i][i];
 	}
 	for (int i = 0; i < n0; i++)
 	{
-		check += m[i][n0-i];
+		check += m0[i][n0-i];
 	}
 	if (sum != check)
 	{
@@ -29,7 +47,7 @@ int main()
 		check = 0;
 		for (int j = 0; j < n0; j++)
 		{
-			check += m[i][j];
+			check += m0[i][j];
 		}
 		if (sum != check)
 		{
@@ -41,7 +59,7 @@ int main()
 		check = 0;
 		for (int j = 0; j < n0; j++)
 		{
-			check += m[j][i];
+			check += m0[j][i];
 		}
 		if (sum != check)
 		{
@@ -53,7 +71,7 @@ int main()
 	no_0:
 		printf("no");
 	next_0:
-		printf("");
+	
 	
 	return 0;
 }
