@@ -71,48 +71,48 @@ int main()
 		printf("no");
 	next_0:
 	// 000000000000000000000000000000000000000000000000000000000000000
-	int sum = 0, check = 0;
+	sum = 0, check = 0;
 	for (int i = 0; i < n0; i++)
 	{
-		sum += m0[i][i];
+		sum += m1[i][i];
 	}
 	for (int i = 0; i < n0; i++)
 	{
-		check += m0[i][n0-i];
+		check += m1[i][n0-i];
 	}
 	if (sum != check)
 	{
-		goto no_0;
+		goto no_1;
 	}
-	for (int i = 0; i < n0; i++)
+	for (int i = 0; i < n1; i++)
 	{
 		check = 0;
-		for (int j = 0; j < n0; j++)
+		for (int j = 0; j < n1; j++)
 		{
-			check += m0[i][j];
+			check += m1[i][j];
 		}
 		if (sum != check)
 		{
-			goto no_0;
+			goto no_1;
 		}
 	}
-	for (int i = 0; i < n0; i++)
+	for (int i = 0; i < n1; i++)
 	{
 		check = 0;
-		for (int j = 0; j < n0; j++)
+		for (int j = 0; j < n1; j++)
 		{
-			check += m0[j][i];
+			check += m1[j][i];
 		}
 		if (sum != check)
 		{
-			goto no_0;
+			goto no_1;
 		}
 	}
 	printf("yes");
-	goto next_0;
-	no_0:
+	goto next_1;
+	no_1:
 		printf("no");
-	next_0:
+	next_1:
 	// 111111111111111111111111111111111111111111111111111111111111111
 	int sum = 0, check = 0;
 	for (int i = 0; i < n0; i++)
