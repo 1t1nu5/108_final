@@ -14,7 +14,7 @@ int main()
 	for (int i = 0; i < max; i++)
 	{
 		scanf("%d", &get);
-		for (int j = 0; number[j] == -1; j++)
+		for (int j = 0; number[j] != -1; j++)
 		{
 			if (get == number[j])
 			{
@@ -27,7 +27,14 @@ int main()
 				amount[j+1]++;
 			}
 		}
-		
+	}
+	int max = 0;
+	for (int i = 0; number[i] != 0; i++)
+	{
+		if (amount[i] > max)
+		{
+			max = amount[i];
+		}
 	}
 	return 0;
 }
