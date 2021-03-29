@@ -65,10 +65,10 @@ int main()
 			goto no_0;
 		}
 	}
-	printf("yes");
+	printf("yes\n");
 	goto next_0;
 	no_0:
-		printf("no");
+		printf("no\n");
 	next_0:
 	// 000000000000000000000000000000000000000000000000000000000000000
 	sum = 0, check = 0;
@@ -108,10 +108,10 @@ int main()
 			goto no_1;
 		}
 	}
-	printf("yes");
+	printf("yes\n");
 	goto next_1;
 	no_1:
-		printf("no");
+		printf("no\n");
 	next_1:
 	// 111111111111111111111111111111111111111111111111111111111111111
 	sum = 0, check = 0;
