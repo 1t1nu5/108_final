@@ -34,5 +34,5 @@ int main()
 			test += m0[i][i];
 		}
 	romp1:
-		
+		;
 }
