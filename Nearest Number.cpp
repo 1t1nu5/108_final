@@ -3,7 +3,11 @@
 int main()
 {
 	int number, digit, length = 1;
-	char receive[8] = {};
+	char receive[8];
+	for (int i = 0; i < 8; i++)
+	{
+		receive[i] = NULL;
+	}
 	scanf("%s", receive);
 	for (int i = 5; i > 1; i--)
 	{
@@ -12,6 +16,7 @@ int main()
 			length = i;
 		}
 	}
+	printf("%d\n", length);
 	switch (length)
 	{
 		case 1:
