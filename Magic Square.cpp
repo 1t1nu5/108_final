@@ -28,7 +28,6 @@ int main()
 		}
 	}
 	
-	
 	int sum = 0, check = 0;
 	for (int i = 0; i < n0; i++)
 	{
@@ -71,7 +70,91 @@ int main()
 	no_0:
 		printf("no");
 	next_0:
-	
-	
+	// 000000000000000000000000000000000000000000000000000000000000000
+	int sum = 0, check = 0;
+	for (int i = 0; i < n0; i++)
+	{
+		sum += m0[i][i];
+	}
+	for (int i = 0; i < n0; i++)
+	{
+		check += m0[i][n0-i];
+	}
+	if (sum != check)
+	{
+		goto no_0;
+	}
+	for (int i = 0; i < n0; i++)
+	{
+		check = 0;
+		for (int j = 0; j < n0; j++)
+		{
+			check += m0[i][j];
+		}
+		if (sum != check)
+		{
+			goto no_0;
+		}
+	}
+	for (int i = 0; i < n0; i++)
+	{
+		check = 0;
+		for (int j = 0; j < n0; j++)
+		{
+			check += m0[j][i];
+		}
+		if (sum != check)
+		{
+			goto no_0;
+		}
+	}
+	printf("yes");
+	goto next_0;
+	no_0:
+		printf("no");
+	next_0:
+	// 111111111111111111111111111111111111111111111111111111111111111
+	int sum = 0, check = 0;
+	for (int i = 0; i < n0; i++)
+	{
+		sum += m0[i][i];
+	}
+	for (int i = 0; i < n0; i++)
+	{
+		check += m0[i][n0-i];
+	}
+	if (sum != check)
+	{
+		goto no_0;
+	}
+	for (int i = 0; i < n0; i++)
+	{
+		check = 0;
+		for (int j = 0; j < n0; j++)
+		{
+			check += m0[i][j];
+		}
+		if (sum != check)
+		{
+			goto no_0;
+		}
+	}
+	for (int i = 0; i < n0; i++)
+	{
+		check = 0;
+		for (int j = 0; j < n0; j++)
+		{
+			check += m0[j][i];
+		}
+		if (sum != check)
+		{
+			goto no_0;
+		}
+	}
+	printf("yes");
+	goto next_0;
+	no_0:
+		printf("no");
+	next_0:
 	return 0;
 }
