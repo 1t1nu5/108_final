@@ -12,7 +12,11 @@ int main()
 			length = i;
 		}
 	}
-	printf("%d\n", length);
+	printf("check:\n");
+	for (int i = 0; i < 8; i++)
+	{
+		printf("%d, %d\n", i, receive[i]);
+	}
 	switch (length)
 	{
 		case 1:
