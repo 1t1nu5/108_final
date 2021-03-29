@@ -3,15 +3,15 @@ int main()
 {
 	int max;
 	scanf("%d", &max);
-	int number[max];
-	int amount[max];
-	for (int i = 0; i < max; i++)
+	int number[max+1];
+	int amount[max+1];
+	for (int i = 0; i < max+1; i++)
 	{
 		number[i] = -1;
 		amount[i] = 0;
 	}
 	int get;
-	for (int i = 0; i < max; i++)
+	for (int i = 0; i < max+1; i++)
 	{
 		scanf("%d", &get);
 		for (int j = 0; number[j] != -1; j++)
@@ -28,13 +28,17 @@ int main()
 			}
 		}
 	}
-	int max = 0;
+	int most = 0;
 	for (int i = 0; number[i] != 0; i++)
 	{
-		if (amount[i] > max)
+		if (amount[i] > most)
 		{
-			max = amount[i];
+			most = amount[i];
 		}
+	}
+	for (int i = 0; number[i] != 0; i++)
+	{
+		
 	}
 	return 0;
 }
