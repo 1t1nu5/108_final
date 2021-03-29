@@ -16,5 +16,12 @@ int main()
 			most = amount[i];
 		}
 	}
+	for (int i = 0; i < 10000; i++)
+	{
+		if (amount[i] == most)
+		{
+			printf("%d ", i);
+		}
+	}
 	return 0;
 }
