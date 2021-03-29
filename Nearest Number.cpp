@@ -2,14 +2,14 @@
 #include <string.h>
 int main()
 {
-	int number, digit, length = 1;
+	int number, digit, length = 5;
 	char receive[8];
 	scanf("%s", receive);
-	for (int i = 4; i > 0; i--)
+	for (int i = 1; i < 6; i--)
 	{
 		if (receive[i] == NULL)
 		{
-			length = i;
+			length = i+1;
 		}
 	}
 	printf("check:\n");
