@@ -14,6 +14,17 @@ int main()
 	for (int i = 0; i < max; i++)
 	{
 		scanf("%d", &get);
+		for (int j = 0; j < max; j++)
+		{
+			if (get == number[i])
+			{
+				amount[i]++;
+			}
+			else
+			{
+				
+			}
+		}
 	}
 	return 0;
 }
