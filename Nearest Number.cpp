@@ -12,7 +12,7 @@ int main()
 	{
 		number++;
 	}
-	while (numbre%10 != digit);
-	printf("%d", numbre);
+	while (number%10 != digit);
+	printf("%d", number);
 	return 0;
 }
