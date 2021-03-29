@@ -27,4 +27,13 @@ int main()
 			scanf("%d", m2[i][j]);
 		}
 	}
+	
+		int test = m0[0][0]+m[1][1]+m[2][2];
+		if (test != m0[0][2]+m[1][1]+m[2][0])
+		{
+			printf("no\n");
+			goto romp1;
+		}
+	romp1:
+		
 }
