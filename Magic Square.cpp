@@ -11,5 +11,10 @@ int main()
 			scanf("%d", &m[i][j]);
 		}
 	}
+	int sum = 0;
+	for (int i = 0; i < n0; i++)
+	{
+		sum += m[i][i];
+	}
 	return 0;
 }
