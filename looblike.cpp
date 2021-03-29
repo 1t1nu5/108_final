@@ -14,17 +14,20 @@ int main()
 	for (int i = 0; i < max; i++)
 	{
 		scanf("%d", &get);
-		for (int j = 0; j < max; j++)
+		for (int j = 0; number[j] == -1; j++)
 		{
-			if (get == number[i])
+			if (get == number[j])
 			{
-				amount[i]++;
+				amount[j]++;
+				break;
 			}
-			else
+			else if (number[j+1] == -1)
 			{
-				
+				number[j+1] = get;
+				amount[j+1]++;
 			}
 		}
+		
 	}
 	return 0;
 }
