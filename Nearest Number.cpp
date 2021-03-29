@@ -21,20 +21,20 @@ int main()
 			break;
 		case 2:
 			number = (receive[0] - '0')*10;
-			number += receive[1];
+			number += receive[1] - '0';
 			digit = receive[3] - '0';
 			break;
 		case 3:
 			number = (receive[0] - '0')*100;
 			number += (receive[1] - '0')*10;
-			number += receive[2];
+			number += receive[2] - '0';
 			digit = receive[4] - '0';
 			break;
 		case 4:
 			number = (receive[0] - '0')*1000;
 			number += (receive[1] - '0')*100;
 			number += (receive[2] - '0')*10;
-			number += receive[3];
+			number += receive[3] - '0';
 			digit = receive[5] - '0';
 			break;
 		case 5:
@@ -42,7 +42,7 @@ int main()
 			number += (receive[1] - '0')*1000;
 			number += (receive[2] - '0')*100;
 			number += (receive[3] - '0')*10;
-			number += receive[4];
+			number += receive[4] - '0';
 			digit = receive[6] - '0';
 			break;
 	}
