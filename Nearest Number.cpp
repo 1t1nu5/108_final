@@ -16,11 +16,17 @@ int main()
 	{
 		case 1:
 			number = receive[0] - '0';
-			digit = receive[3] - '0';
+			digit = receive[2] - '0';
 			break;
 		case 2:
 			number = (receive[0] - '0')*10;
 			number += receive[1];
+			digit = receive[3] - '0';
+			break;
+		case 3:
+			number = (receive[0] - '0')*100;
+			number = (receive[1] - '0')*10;
+			number += receive[2];
 			digit = receive[4] - '0';
 			break;
 	}
