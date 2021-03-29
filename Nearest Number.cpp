@@ -3,11 +3,16 @@ int main()
 {
 	int number, digit;
 	scanf("%d %d", &number, &digit);
-	number++;
-	while (number%10 != digit)
+	if (number%10 == digit)
+	{
+		printf("%d", number);
+		return 0;
+	}
+	do
 	{
 		number++;
 	}
-	printf("%d", number);
+	while (numbre%10 != digit);
+	printf("%d", numbre);
 	return 0;
 }
