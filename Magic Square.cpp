@@ -1,7 +1,15 @@
 #include <stdio.h>
 int main()
 {
-	int n[3];
-	scanf("%d", &n[0]);
+	int n0;
+	scanf("%d", &n0);
+	int m[n0][n0];
+	for (int i = 0; i < n0; i++)
+	{
+		for (int j = 0; j < n0; j++)
+		{
+			scanf("%d", &m[i][j]);
+		}
+	}
 	return 0;
 }
