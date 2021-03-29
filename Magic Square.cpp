@@ -28,7 +28,11 @@ int main()
 		}
 	}
 		
-		
+		int test = 0, check = 0;
+		for (int i = 0; i < n0; i++)
+		{
+			test += m0[i][i];
+		}
 	romp1:
 		
 }
