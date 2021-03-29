@@ -11,10 +11,15 @@ int main()
 			scanf("%d", &m[i][j]);
 		}
 	}
-	int sum = 0;
+	int sum = 0, check;
 	for (int i = 0; i < n0; i++)
 	{
 		sum += m[i][i];
 	}
+	for (int i = 0; i < n0; i++)
+	{
+		check += m[i][no-i];
+	}
+	
 	return 0;
 }
