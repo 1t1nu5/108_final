@@ -25,25 +25,26 @@ int main()
 			break;
 		case 3:
 			number = (receive[0] - '0')*100;
-			number = (receive[1] - '0')*10;
+			number += (receive[1] - '0')*10;
 			number += receive[2];
 			digit = receive[4] - '0';
 			break;
 		case 4:
 			number = (receive[0] - '0')*1000;
-			number = (receive[1] - '0')*100;
-			number = (receive[2] - '0')*10;
+			number += (receive[1] - '0')*100;
+			number += (receive[2] - '0')*10;
 			number += receive[3];
 			digit = receive[5] - '0';
 			break;
 		case 5:
 			number = (receive[0] - '0')*10000;
-			number = (receive[1] - '0')*1000;
-			number = (receive[2] - '0')*100;
-			number = (receive[3] - '0')*10;
+			number += (receive[1] - '0')*1000;
+			number += (receive[2] - '0')*100;
+			number += (receive[3] - '0')*10;
 			number += receive[4];
 			digit = receive[6] - '0';
 			break;
 	}
+	printf("%d %d", number, digit);
 	return 0;
 }
