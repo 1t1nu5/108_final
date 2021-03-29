@@ -12,5 +12,11 @@ int main()
 			length = i;
 		}
 	}
+	switch (length)
+	{
+		case 1:
+			number = receive[0] - '0';
+			digit = receive[3] - '0';
+	}
 	return 0;
 }
