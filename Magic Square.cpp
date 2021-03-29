@@ -11,7 +11,7 @@ int main()
 			scanf("%d", &m[i][j]);
 		}
 	}
-	int sum = 0, check;
+	int sum = 0, check = 0;
 	for (int i = 0; i < n0; i++)
 	{
 		sum += m[i][i];
@@ -23,6 +23,18 @@ int main()
 	if (sum != check)
 	{
 		goto no_0;
+	}
+	for (int i = 0; i < n0; i++)
+	{
+		check = 0;
+		for (int j = 0; j < n0; j++)
+		{
+			check += m[i][j];
+		}
+		if (sum != check)
+		{
+			goto no_0;
+		}
 	}
 	yes_0:
 		printf("yes");
