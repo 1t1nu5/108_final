@@ -20,6 +20,15 @@ int main()
 	{
 		check += m[i][no-i];
 	}
-	
+	if (sum != check)
+	{
+		goto no_0;
+	}
+	yes_0:
+		printf("yes");
+		goto next_0;
+	no_0:
+		printf("no");
+	next_0:
 	return 0;
 }
