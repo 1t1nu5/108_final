@@ -5,7 +5,7 @@ int main()
 	scanf("%d", &max);
 	for (int i = 0; i < max; i++)
 	{
-		scanf("%d", get);
+		scanf("%d", &get);
 		amount[get]++;
 	}
 	int most = 0;
