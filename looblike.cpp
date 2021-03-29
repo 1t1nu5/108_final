@@ -8,5 +8,13 @@ int main()
 		scanf("%d", get);
 		amount[get]++;
 	}
+	int most = 0;
+	for (int i = 0; i < 10000; i++)
+	{
+		if (amount[i] > most)
+		{
+			most = amount[i];
+		}
+	}
 	return 0;
 }
