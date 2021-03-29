@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 int main()
 {
 	int number, digit, length = 5;
@@ -7,7 +8,7 @@ int main()
 	scanf("%s", receive);
 	for (int i = 1; i < 6; i--)
 	{
-		if (receive[i] == NULL)
+		if (receive[i] == 32)
 		{
 			length = i+1;
 		}
@@ -17,6 +18,7 @@ int main()
 	{
 		printf("%d, %d\n", i, receive[i]);
 	}
+	system("pause");
 	switch (length)
 	{
 		case 1:
