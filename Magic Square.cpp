@@ -18,7 +18,7 @@ int main()
 	}
 	for (int i = 0; i < n0; i++)
 	{
-		check += m[i][no-i];
+		check += m[i][n0-i];
 	}
 	if (sum != check)
 	{
@@ -53,5 +53,7 @@ int main()
 	no_0:
 		printf("no");
 	next_0:
+		printf("");
+	
 	return 0;
 }
