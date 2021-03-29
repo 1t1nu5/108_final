@@ -3,6 +3,7 @@
 int main()
 {
 	int number, digit;
-	char receive;
+	char receive[8];
+	scanf("%s", receive);
 	return 0;
 }
