@@ -21,7 +21,7 @@ int main()
 				amount[j]++;
 				break;
 			}
-			else if (number[j+1] == -1)
+			else if (number[j] == -1)
 			{
 				number[j+1] = get;
 				amount[j+1]++;
@@ -38,7 +38,10 @@ int main()
 	}
 	for (int i = 0; number[i] != 0; i++)
 	{
-		
+		if (amount[i] == most)
+		{
+			printf("%d ", number[i]);
+		}
 	}
 	return 0;
 }
